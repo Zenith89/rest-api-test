@@ -36,4 +36,8 @@ app.post('*',  (req, res) =>{utils.handleInvalidUrl(req,res)});
 app.listen(port, () => {
     console.log(`listning on port ${port}`)
 })
+// module.exports= {app}
+module.exports.app = app
+
+
 
