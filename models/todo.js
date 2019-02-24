@@ -14,7 +14,7 @@ const storeTodo = (data, path) => {
 }
 const loadTodo = (path) => {
         try {
-        return  fs.readFileSync(path, 'utf8')
+        return JSON.parse(fs.readFileSync(path, 'utf8'))
       } catch (err) {
         console.error(err)
       }
